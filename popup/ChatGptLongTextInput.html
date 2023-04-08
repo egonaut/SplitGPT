@@ -13,16 +13,23 @@
       <button type="reset">Reset</button>
       <form>
         <label for="FirstMessage">First Message:</label>
-        <input id="FirstMessage" type ="text" value="I am going to provide you a book in multiple messages.">
+        <input id="FirstMessage" type ="text" value="The total length of the content that I want to send you is too large to send in only one piece.
+        
+For sending you that content, I will follow this rule:
+        
+[START PART 1/10]
+this is the content of the part 1 out of 10 in total
+[END PART 1/10]
+        
+Then you just answer: 'Received part 1/10'
+        
+And when I tell you 'ALL PARTS SENT', then you can continue processing the data and answering my requests.">
         <label for="PrefixMessage">Before each addition:</label>
-        <input id="PrefixMessage" type ="text" value="Here is the next page, please do not respond aside from confirmation:">
+        <input id="PrefixMessage" type ="text" value="">
         <label for="textInput">Text to import:</label>
         <textarea id="textInput"></textarea>
       </form>
 
-    </div>
-    <div id="error-content" class="hidden">
-      <p>Try a different page.</p>
     </div>
     <script src="ChatGptLongTextInput.js"></script>
   </body>
